@@ -86,5 +86,10 @@ for(const jogad of jogadores){
     }
 }
 
-console.log(`
-O(s) grande(s) vencedor(es): ${vencedores}!!`);
+if (vencedores.length > 1){
+    console.log(`
+Os grandes vencedores são: ${vencedores}, eles venceram ${vencedor} partida(s).`);
+}else if (vencedores.length == 1){
+    console.log(`
+O grande vencedor foi: ${vencedores}, venceu ${vencedor} partidas.`);
+}
